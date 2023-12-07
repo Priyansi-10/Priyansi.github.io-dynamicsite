@@ -110,3 +110,9 @@ function changeBackground() {
     }, 300);
 }
 
+document.addEventListener('keydown', handleKeyPress);
+function handleKeyPress(event) {
+    if (event.keyCode === 32) {
+        changeBackground();
+    }
+}
